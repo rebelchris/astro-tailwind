@@ -7,7 +7,10 @@ let title = 'My Astro Site';
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{title}</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <link rel="stylesheet" href="/style/global.css">
+    <link
+        rel="stylesheet"
+        href={Astro.resolve("../assets/style/global.css")}
+    >
 </head>
 <body>
     <div class="bg-gradient-to-br from-indigo-900 to-green-900 min-h-screen overflow-auto">
